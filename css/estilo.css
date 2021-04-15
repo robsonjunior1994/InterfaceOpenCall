@@ -286,3 +286,95 @@ td {
 
 }
 
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.quadradoChamado {
+    display: flex;
+    justify-content: center;
+    width: 95%;   
+}
+
+.borda {
+    border: 1px solid #707070;
+}
+
+.quadradoChamadoFotoNome {
+    width: 30%;
+}
+
+.fotoPerfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imgperfil {
+    padding-top: 5px;
+    width: 50%;
+}
+
+.nomeUsuario {
+    padding-top: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.quadradoDireitaChamado {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.textoDoChamado {
+    margin: 10px 0 0 10px;
+    font-size: 22px;
+}
+
+.chamadoEndereco {
+    flex: 1;
+}
+
+.chamadoDescricao {
+    flex: 1;
+}
+
+.chamadoData {
+    flex: 1;
+}
+
+.chamadoStatus {
+    flex: 1;
+}
+
+.quadradoDireitaFotoStatus {
+    display: flex;
+    justify-content: center;
+}
+
+.divDaFotoStatus {
+    padding: 5px 0 0 5px;
+}
+
+.fotoChamado {
+    width: 50px;
+}
+
+@media (max-width: 414px)
+{
+    .imgperfil {
+        width: 100%;
+    }
+
+    .textoDoChamado {
+        margin: 10px 0 0 5px;
+        font-size: 16px;
+    }
+
+}
