@@ -1,5 +1,5 @@
 
-var Tarefa, Query, IdUsuario, url;
+var Tarefa, Query, IdUsuario, url, menu;
 url = "https://localhost:44357"
 function verificarSeEstaLogado() {
     var chave = localStorage.getItem('chave');
@@ -326,4 +326,15 @@ function MostrarAddTarefa () {
 
 function EsconderAddTarefa () {
     document.querySelector(".corpo").classList.remove('displayShow');
+}
+
+function MenuOpenClose () {
+    if(menu == null){
+        menu = true;
+        document.querySelector(".corpoMenu").classList.add('displayShow');
+    } else {
+        document.querySelector(".corpoMenu").classList.remove('displayShow');
+        menu = null;
+    }
+    
 }
